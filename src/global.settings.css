@@ -1,0 +1,183 @@
+:root {
+    /* box shadows or text shadows */
+    --box-shadow-light: 2px 2px 3px rgba(27, 27, 27, 0.404);
+    --box-shadow-dark: 2px 2px 3px rgba(26, 26, 26, 0.694);
+    --box-shadow-no-light: 0px 0px 3px rgba(27, 27, 27, 0.404);
+    --box-shadow-no-dark: 0px 0px 3px rgba(26, 26, 26, 0.694);
+
+    /* transition delays */
+    --delay-sm: all 0.15s ease;
+    --delay-m: all 0.25s ease;
+    --delay-l: all 0.4s ease;
+
+    /* specifics */
+    --gutter: 1.5rem;
+    /* page gutter */
+    --round-sm: 0.7rem;
+    /* border-radius */
+    --round-m: 0.85rem;
+    /* border-radius */
+    --round-l: 1.15px;
+    /* border-radius */
+
+    /* others */
+
+    /* Base Colors */
+    --color-bg-primary: #0d1117;
+    --color-bg-secondary: #161b22;
+    --color-bg-tertiary: #1c2128;
+
+    --color-surface: #21262d;
+    --color-surface-hover: #262c36;
+
+    /* Text */
+
+    --color-text-primary: #e6edf3;
+    --color-text-secondary: #9da7b3;
+    --color-text-muted: #6e7681;
+
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-heading: 'Fira Sans', sans-serif;
+
+    /* Text Sizes */
+
+    --text-xxs: 0.625rem;
+    /* 10px */
+    --text-xsm: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-md: 1rem;
+    /* 16px (base) */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 1.875rem;
+    /* 30px */
+    --text-4xl: 2.25rem;
+
+    /* Line Heights for Text */
+
+    --leading-xxs: 1rem;
+    /* ~16px */
+    --leading-xsm: 1.125rem;
+    /* ~18px */
+    --leading-sm: 1.25rem;
+    /* ~20px */
+    --leading-md: 1.5rem;
+    /* ~24px */
+    --leading-lg: 1.75rem;
+    /* ~28px */
+    --leading-xl: 2rem;
+    /* ~32px */
+    --leading-2xl: 2.25rem;
+    /* ~36px */
+    --leading-3xl: 2.5rem;
+    /* ~40px */
+
+    /* Borders */
+
+    --color-border-primary: #30363d;
+    --color-border-muted: #21262d;
+
+    /* Accent (Primary Brand) */
+
+    --color-accent: #2f81f7;
+    --color-accent-hover: #3b8cff;
+    --color-accent-muted: #1f6feb;
+
+    /* Highlight / Focus */
+
+    --color-focus-ring: #1f6feb66;
+
+    /* Status Colors */
+
+    --color-success: #3fb950;
+    --color-warning: #d29922;
+    --color-danger: #f85149;
+    --color-info: #58a6ff;
+
+    /* Hover / Active */
+
+    --color-hover-overlay: rgba(177, 186, 196, 0.12);
+    --color-active-overlay: rgba(177, 186, 196, 0.18);
+
+    /* Shadows */
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 3px 8px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.55);
+
+    /* Animations */
+
+    --anim-fast: 120ms;
+    --anim-normal: 200ms;
+    --anim-slow: 350ms;
+
+    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Border Radi */
+
+    --round-xsm: 0.2rem;
+    --round-sm: 0.35rem;
+    --round-m: 0.5rem;
+    --round-l: 0.8rem;
+    --round-xl: 1rem;
+    --round-xxl: 1.4rem;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+
+    body {
+        margin: 0;
+        font-family: var(--font-body);
+        font-size: var(--text-md);
+        line-height: var(--leading-md);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading);
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    html>body {}
+}
+
+@media screen and (max-width: 800px) {
+    html>body {}
+}
+
+@media screen and (max-width: 500px) {
+    html>body {}
+}
+
+@media screen and (max-width: 300px) {
+    html>body {}
+}
